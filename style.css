@@ -1,0 +1,90 @@
+/* Estilizando todos os elementos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Estilizando os botões e o label */
+button, label {
+    padding: 20px 20px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#adicionarItem {
+    background-color: #27ae60;
+    color: white;
+}
+
+button#fecharCompra {
+    background-color: #c0392b;
+    color: white;
+}
+
+button:hover, label:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+label#fechamentoLabelId {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+/* Estilizando a tabela e suas células */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+table th {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Estilizando as células do cabeçalho */
+th:nth-child(odd) {
+    background-color: #2980b9;
+}
+
+/* Estilizando as células da tabela (linhas ímpares e pares com cores diferentes) */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd; /* Mudança de cor ao passar o mouse por cima */
+}
+
+/* Estilizando os campos de entrada */
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px #3498db;
+}
